@@ -64,8 +64,7 @@ class ExploreScreen extends StatelessWidget {
   Widget getStaggeredGridView(BuildContext context) {
     return StaggeredGrid.count(
       crossAxisCount: 4,
-        
-     
+
       mainAxisSpacing: 3.0,
       crossAxisSpacing: 4.0,
       children: categoryItemsDemo.asMap().entries.map<Widget>((e) {
@@ -90,7 +89,7 @@ class ExploreScreen extends StatelessWidget {
   void onCategoryItemClicked(BuildContext context, CategoryItem categoryItem) {
     Navigator.of(context).push(MaterialPageRoute(
       builder: (BuildContext context) {
-        return CategoryItemsScreen();
+        return const CategoryItemsScreen();
       },
     ));
   }

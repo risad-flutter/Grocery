@@ -62,7 +62,7 @@ class WelcomeScreen extends StatelessWidget {
 
   Widget welcomeTextWidget() {
     return Column(
-      children:  [
+      children: const [
         AppText(
           text: "Welcome",
           fontSize: 48,
@@ -102,7 +102,7 @@ class WelcomeScreen extends StatelessWidget {
   void onGetStartedClicked(BuildContext context) {
     Navigator.of(context).pushReplacement(MaterialPageRoute(
       builder: (BuildContext context) {
-        return DashboardScreen();
+        return const DashboardScreen();
       },
     ));
   }

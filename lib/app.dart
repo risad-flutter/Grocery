@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: themeData,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
